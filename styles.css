@@ -82,22 +82,4 @@ p { color: var(--muted); margin: 0 0 .8rem; }
   .hero-grid, .three-up, .footer-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
-
-
-.cta-strip { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; }
-#home { height: 1px; }
-
-.link-card { text-decoration: none; display: block; }
-.service .img, .gallery-grid .ph { min-height: 110px; }
-.ph { background: linear-gradient(135deg, #1a2a3f, #2b3b52); display: grid; place-items: center; color: #dbe6f7; }
-.service { display: grid; gap: .45rem; }
-.bullets { margin: 0; padding: 1rem 1rem 1rem 1.8rem; }
-.bullets li { margin: .35rem 0; }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; margin-bottom: .9rem; }
-.booking-form { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .7rem; }
-.booking-form label { display: grid; gap: .3rem; color: var(--muted); font-weight: 600; }
-.booking-form input, .booking-form textarea { width: 100%; border: 1px solid var(--line); background: #0d1624; color: var(--text); border-radius: 10px; padding: .6rem; }
-.full-row { grid-column: 1 / -1; }
-@media (max-width: 920px) {
-  .gallery-grid, .booking-form { grid-template-columns: 1fr; }
 }
