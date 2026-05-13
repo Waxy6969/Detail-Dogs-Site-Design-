@@ -26,7 +26,6 @@ This implementation is based on the structure/style direction requested from the
 5. Output directory: *(leave empty for static root)*.
 6. Deploy.
 
-
 ## Local verification (no npm required)
 
 Run these checks in restricted environments where npm registry access may be blocked:
