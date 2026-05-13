@@ -68,3 +68,28 @@ After approval:
 
 1. Merge the preview branch into your production branch (commonly `main`).
 2. Vercel will trigger a production deployment for the merged commit.
+
+## Update GitHub PR and refresh Vercel preview
+
+After making changes, use this flow to update your open PR and trigger a new Vercel preview deployment:
+
+```bash
+git add .
+git commit -m "Update landing page"
+git push origin work
+```
+
+Then:
+
+1. Open your GitHub PR and confirm the latest commit appears.
+2. Open Vercel Dashboard → your project → Deployments.
+3. Vercel will automatically create a new **Preview** deployment from the updated PR commit.
+4. Click the newest deployment URL to verify the latest site changes.
+
+### Force redeploy in Vercel (if needed)
+
+If a deployment does not refresh automatically:
+
+1. Open the deployment in Vercel.
+2. Click **Redeploy**.
+3. Choose **Use existing Build Cache** (fast) or **Without Build Cache** (clean rebuild).
