@@ -6,7 +6,7 @@
     <title>Detail Dogs LLC | Premium Mobile Detailing</title>
     <meta
       name="description"
-      content="Detail Dogs LLC delivers premium mobile interior and exterior detailing with membership plans and easy online booking."
+      content="Detail Dogs LLC delivers premium mobile interior and exterior detailing with easy online booking."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="logo" href="#">DETAIL DOGS</a>
-        <nav class="nav-links">
+        <a class="logo" href="#main-content" aria-label="Detail Dogs homepage">DETAIL DOGS</a>
+        <nav class="nav-links" aria-label="Primary navigation">
           <a href="#services">Services</a>
           <a href="#plans">Plans</a>
           <a href="#results">Results</a>
@@ -30,7 +32,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
         <div class="container hero-grid">
           <div>
@@ -40,27 +42,27 @@
               Cars, trucks, vans, SUVs, motorcycles, RVs, semi trucks, and fleet vehicles detailed on your schedule.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#plans">Book Now</a>
+              <a class="btn btn-primary" href="#contact">Book Now</a>
               <a class="btn btn-outline" href="#results">Read Reviews</a>
             </div>
 
-            <div class="metrics">
+            <div class="metrics" aria-label="Trust metrics">
               <article>
-                <h3>60,382+</h3>
+                <h2>60,382+</h2>
                 <p>Reviews and counting</p>
               </article>
               <article>
-                <h3>4.72/5</h3>
+                <h2>4.72/5</h2>
                 <p>Average customer rating</p>
               </article>
               <article>
-                <h3>On-Demand</h3>
+                <h2>On-Demand</h2>
                 <p>Appointments on your schedule</p>
               </article>
             </div>
           </div>
 
-          <aside class="hero-card">
+          <aside class="hero-card" aria-label="Booking highlights">
             <h2>Schedule your service today</h2>
             <ul>
               <li>✅ We come to you</li>
@@ -72,32 +74,32 @@
         </div>
       </section>
 
-      <section id="services" class="container section">
+      <section id="services" class="container section" aria-labelledby="services-heading">
         <div class="section-title">
           <p class="eyebrow">SERVICE MENU</p>
-          <h2>Packages for personal, recreational, and commercial vehicles.</h2>
+          <h2 id="services-heading">Packages for personal, recreational, and commercial vehicles.</h2>
         </div>
         <div class="cards three-up">
           <article class="card">
-            <h3>Cars, Trucks, Vans & SUVs</h3>
+            <h3>Cars, Trucks, Vans &amp; SUVs</h3>
             <p>Popular Platinum package with wash, clay bar, hand wax, vacuum, UV protection, shampoo, and deep clean.</p>
           </article>
           <article class="card featured">
-            <h3>RVs, Travel Trailers & Buses</h3>
+            <h3>RVs, Travel Trailers &amp; Buses</h3>
             <p>Gold and Platinum package options tailored by length, type, and condition.</p>
           </article>
           <article class="card">
-            <h3>Semi Trucks & Fleet</h3>
+            <h3>Semi Trucks &amp; Fleet</h3>
             <p>Sleeper cab and day cab packages plus custom fleet programs for business accounts.</p>
           </article>
         </div>
       </section>
 
-      <section id="plans" class="section plans">
+      <section id="plans" class="section plans" aria-labelledby="plans-heading">
         <div class="container">
           <div class="section-title">
             <p class="eyebrow">WHY CUSTOMERS CHOOSE US</p>
-            <h2>Built for convenience, support, and guaranteed satisfaction.</h2>
+            <h2 id="plans-heading">Built for convenience, support, and guaranteed satisfaction.</h2>
           </div>
           <div class="cards three-up">
             <article class="card plan">
@@ -119,10 +121,10 @@
         </div>
       </section>
 
-      <section id="results" class="container section">
+      <section id="results" class="container section" aria-labelledby="results-heading">
         <div class="section-title">
           <p class="eyebrow">WHY DETAIL DOGS</p>
-          <h2>Need recurring services for your business vehicles?</h2>
+          <h2 id="results-heading">Need recurring services for your business vehicles?</h2>
         </div>
         <div class="cards two-up">
           <article class="card">
@@ -131,9 +133,7 @@
           </article>
           <article class="card">
             <h3>Service Regions</h3>
-            <p>
-              Serving major regions nationwide with package availability based on vehicle type and location.
-            </p>
+            <p>Serving major regions nationwide with package availability based on vehicle type and location.</p>
           </article>
         </div>
       </section>
@@ -142,7 +142,7 @@
     <footer id="contact" class="site-footer">
       <div class="container footer-grid">
         <div>
-          <h3>Detail Dogs LLC</h3>
+          <h2>Detail Dogs LLC</h2>
           <p>Phone: (555) 555-5555</p>
           <p>Email: hello@detaildogsllc.com</p>
         </div>
