@@ -82,3 +82,4 @@ p { color: var(--muted); margin: 0 0 .8rem; }
   .hero-grid, .three-up, .footer-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
+}
