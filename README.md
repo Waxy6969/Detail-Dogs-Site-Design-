@@ -92,6 +92,3 @@ If a deployment does not refresh automatically:
 1. Open the deployment in Vercel.
 2. Click **Redeploy**.
 3. Choose **Use existing Build Cache** (fast) or **Without Build Cache** (clean rebuild).
-
-## Hero banner asset
-Place your provided banner image at `assets/hero-banner.jpg` to render the homepage hero graphic.
