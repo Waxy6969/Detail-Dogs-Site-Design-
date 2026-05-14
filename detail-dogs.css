@@ -1,14 +1,36 @@
-/* Detail Dogs Professional Layout Improvements */
+/* Detail Dogs Professional Color Palette Update - Navy Blue & Red Theme */
 
-/* ===== ROOT VARIABLES ===== */
+/* ===== ROOT VARIABLES - NEW COLOR PALETTE ===== */
 :root {
+  /* Deep Navy Blue Backgrounds */
+  --bg-darkest: #0a0f1e;
+  --bg-dark: #0e1530;
+  --bg-darker: #131c3a;
+  
+  /* Text Colors */
   --text-main: #f5f8ff;
   --text-muted: #b8c5d8;
-  --card-bg: linear-gradient(135deg, rgba(26, 42, 63, 0.8), rgba(17, 27, 42, 0.8));
-  --card-border: rgba(39, 56, 79, 0.8);
+  
+  /* Accent Colors - Red & Blue Theme */
+  --accent-red: #dc2626;
+  --accent-red-light: #ef4444;
+  --accent-red-dark: #b91c1c;
+  --accent-blue: #3b82f6;
+  --accent-blue-light: #60a5fa;
+  --accent-blue-dark: #1e40af;
+  
+  /* Card Styling */
+  --card-bg: linear-gradient(135deg, rgba(19, 28, 58, 0.8), rgba(14, 21, 48, 0.8));
+  --card-border: #1e2d5a;
+  
+  /* Structural */
   --container-max: 1280px;
   --transition: 0.3s ease;
   --border-radius: 12px;
+}
+
+body {
+  background: linear-gradient(180deg, #0f1724 0%, var(--bg-dark) 45%);
 }
 
 /* ===== BASE STYLES ===== */
@@ -22,7 +44,7 @@
 }
 
 .logo:hover {
-  color: #fbbf24;
+  color: var(--accent-red);
 }
 
 .nav-cta,
@@ -34,6 +56,8 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  background: var(--accent-red);
+  color: white;
 }
 
 .nav-cta:hover,
@@ -41,7 +65,9 @@
 .action-btn:hover,
 .cta-btn-primary:hover,
 .cta-btn-secondary:hover {
+  background: var(--accent-red-light);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.3);
 }
 
 /* ===== SERVICE PANEL ===== */
@@ -54,13 +80,14 @@
   display: grid;
   gap: 0.6rem;
   padding: 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(19, 28, 58, 0.6);
   font-family: 'Space Mono', monospace;
   font-size: 0.86rem;
   color: var(--text-main);
   border-radius: 8px;
   line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
 
 .booking-summary span {
@@ -76,6 +103,7 @@
   min-height: 280px;
   border-radius: 8px;
   overflow: hidden;
+  border: 1px solid var(--card-border);
 }
 
 .result-preview .generated-image {
@@ -104,17 +132,33 @@
   background: var(--card-bg);
   border-radius: var(--border-radius);
   transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-grid .feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.05), transparent 42%, rgba(59, 130, 246, 0.05));
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+}
+
+.service-grid .feature-card:hover::before {
+  opacity: 1;
 }
 
 .service-grid .feature-card:hover {
-  border-color: rgba(251, 191, 36, 0.5);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-red);
+  box-shadow: 0 12px 40px rgba(220, 38, 38, 0.2);
   transform: translateY(-4px);
 }
 
 .feature-number {
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--accent-red);
   font-size: 2.2rem;
 }
 
@@ -137,12 +181,12 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  border-top: 1px solid rgba(251, 191, 36, 0.2);
+  border-top: 1px solid rgba(220, 38, 38, 0.2);
 }
 
 .feature-stat-value {
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--accent-red);
   font-size: 1.1rem;
 }
 
@@ -156,9 +200,10 @@
   max-width: 860px;
   margin: 0 auto 3rem;
   padding: 2rem;
-  border: 1px solid rgba(251, 191, 36, 0.35);
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(168, 85, 247, 0.08));
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(59, 130, 246, 0.08));
   border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.1);
 }
 
 .review-quote p {
@@ -172,7 +217,7 @@
 
 .review-quote strong {
   font-family: 'Space Mono', monospace;
-  color: #fbbf24;
+  color: var(--accent-red);
   font-size: 0.95rem;
 }
 
@@ -181,9 +226,10 @@
   max-width: 980px;
   margin-bottom: 2.5rem;
   padding: 2rem;
-  border: 1px solid rgba(251, 191, 36, 0.35);
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(255, 45, 106, 0.06));
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(59, 130, 246, 0.08));
   border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.1);
 }
 
 .featured-review-panel p {
@@ -197,7 +243,7 @@
 
 .featured-review-panel strong {
   font-family: 'Space Mono', monospace;
-  color: #fbbf24;
+  color: var(--accent-red);
 }
 
 /* ===== REVIEW CARDS ===== */
@@ -222,11 +268,28 @@
   color: var(--text-main);
   border-radius: var(--border-radius);
   transition: all var(--transition);
+  position: relative;
+}
+
+.review-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-red), var(--accent-blue));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.review-card:hover::before {
+  opacity: 1;
 }
 
 .review-card:hover {
-  border-color: rgba(251, 191, 36, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-color: rgba(220, 38, 38, 0.3);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
 }
 
 .review-card.large {
@@ -279,9 +342,10 @@
   gap: 1.2rem;
   width: 100%;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  background: rgba(19, 28, 58, 0.6);
   border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
 
 .booking-form label {
@@ -300,8 +364,8 @@
 .booking-form textarea,
 .booking-form select {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--card-border);
+  background: rgba(14, 21, 48, 0.8);
   color: var(--text-main);
   padding: 0.85rem;
   font: inherit;
@@ -320,10 +384,10 @@
 .booking-form input:focus,
 .booking-form textarea:focus,
 .booking-form select:focus {
-  outline: 2px solid rgba(251, 191, 36, 0.5);
-  outline-offset: 1px;
-  background: rgba(0, 0, 0, 0.4);
-  border-color: rgba(251, 191, 36, 0.3);
+  outline: none;
+  border-color: var(--accent-red);
+  background: rgba(14, 21, 48, 0.95);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
 }
 
 .full-row {
@@ -334,17 +398,20 @@
 .footer-subscribe h4 {
   margin-bottom: 1rem;
   margin-top: 0;
+  color: var(--text-main);
 }
 
 .footer-subscribe p {
   margin: 0.4rem 0;
   font-size: 0.95rem;
   line-height: 1.6;
+  color: var(--text-muted);
 }
 
 /* ===== SUBPAGE STYLES ===== */
 .subpage-main {
   padding: 9rem 4% 4rem;
+  background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
 }
 
 .subpage-inner {
@@ -365,6 +432,10 @@
   line-height: 1;
   letter-spacing: 1px;
   color: var(--text-main);
+  background: linear-gradient(135deg, var(--text-main), rgba(59, 130, 246, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .subpage-copy {
@@ -385,7 +456,7 @@
 }
 
 .back-link:hover {
-  color: var(--text-main);
+  color: var(--accent-red);
 }
 
 /* ===== SERVICE PAGES ===== */
@@ -394,6 +465,24 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin: 2rem 0;
+}
+
+.filter-tab {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--card-border);
+  background: rgba(19, 28, 58, 0.5);
+  color: var(--text-muted);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+  background: var(--accent-red);
+  color: white;
+  border-color: var(--accent-red);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
 .service-card-grid {
@@ -422,7 +511,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 240, 255, 0.08), transparent 42%, rgba(255, 45, 106, 0.08));
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), transparent 42%, rgba(59, 130, 246, 0.1));
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -432,9 +521,9 @@
 }
 
 .service-card:hover {
-  border-color: rgba(251, 191, 36, 0.3);
+  border-color: var(--accent-red);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 40px rgba(220, 38, 38, 0.2);
 }
 
 .service-card > * {
@@ -480,8 +569,9 @@
   position: relative;
   min-height: 420px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(14, 21, 48, 0.8);
   border-radius: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .before-after-image {
@@ -511,8 +601,8 @@
   bottom: 0;
   left: var(--split);
   width: 2px;
-  background: #fbbf24;
-  box-shadow: 0 0 18px rgba(251, 191, 36, 0.85);
+  background: var(--accent-red);
+  box-shadow: 0 0 18px rgba(220, 38, 38, 0.8);
 }
 
 .before-after-handle::after {
@@ -522,8 +612,8 @@
   left: 50%;
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(251, 191, 36, 0.8);
-  background: rgba(8, 8, 12, 0.86);
+  border: 2px solid var(--accent-red);
+  background: rgba(14, 21, 48, 0.95);
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -536,8 +626,8 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   color: var(--text-main);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid var(--card-border);
+  background: rgba(14, 21, 48, 0.9);
   padding: 0.4rem 0.55rem;
   border-radius: 4px;
   letter-spacing: 0.08em;
@@ -553,7 +643,7 @@
 
 .before-after-range {
   width: 100%;
-  accent-color: #fbbf24;
+  accent-color: var(--accent-red);
   height: 6px;
   cursor: pointer;
 }
@@ -578,8 +668,9 @@
 }
 
 .gallery-result-card:hover {
-  border-color: rgba(251, 191, 36, 0.3);
+  border-color: var(--accent-red);
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
 }
 
 .gallery-result-card img {
@@ -604,9 +695,10 @@
   align-items: center;
   margin-top: 2.5rem;
   padding: 2rem;
-  border: 1px solid rgba(251, 191, 36, 0.35);
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(0, 240, 255, 0.06));
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(59, 130, 246, 0.08));
   border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.1);
 }
 
 .gallery-cta-panel h2 {
@@ -619,9 +711,9 @@
 
 /* ===== UTILITY ===== */
 .service-pill {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-main);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--accent-red);
   font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
   padding: 0.4rem 0.65rem;
@@ -674,6 +766,83 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+/* ===== PRICING CARDS ===== */
+.price-card {
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-card.popular {
+  border: 2px solid var(--accent-red);
+  box-shadow: 0 0 30px rgba(220, 38, 38, 0.2);
+  transform: scale(1.02);
+}
+
+.price-card:hover {
+  border-color: var(--accent-red);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.15);
+}
+
+.popular-badge {
+  background: var(--accent-red);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq-item {
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.2rem;
+  background: rgba(19, 28, 58, 0.6);
+  border: none;
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: left;
+}
+
+.faq-question:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--accent-red);
+}
+
+.faq-item.open .faq-question {
+  background: rgba(220, 38, 38, 0.15);
+  color: var(--accent-red);
+}
+
+.faq-answer {
+  padding: 1.2rem;
+  background: rgba(14, 21, 48, 0.5);
+  color: var(--text-muted);
+  line-height: 1.7;
+  display: none;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -766,6 +935,10 @@
   .service-detail-actions {
     gap: 0.75rem;
   }
+
+  .price-card.popular {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 480px) {
@@ -787,7 +960,8 @@
 
   .feature-card,
   .service-card,
-  .review-card {
+  .review-card,
+  .price-card {
     padding: 1rem;
     min-height: auto;
   }
