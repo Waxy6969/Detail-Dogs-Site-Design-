@@ -22,6 +22,20 @@ document.querySelectorAll(".aspect-btn").forEach((btn) => {
     });
 });
 
+document.querySelectorAll("a[href='#gallery'], a[href='/#gallery']").forEach((link) => {
+    link.setAttribute("href", "/gallery/");
+});
+
+const resultShowcaseHeader = document.querySelector("#gallery .section-header > div:first-child");
+
+if (resultShowcaseHeader && !resultShowcaseHeader.querySelector("a[href='/gallery/']")) {
+    const galleryLink = document.createElement("a");
+    galleryLink.className = "cta-btn-secondary";
+    galleryLink.href = "/gallery/";
+    galleryLink.textContent = "View Full Gallery";
+    resultShowcaseHeader.appendChild(galleryLink);
+}
+
 document.querySelectorAll(".filter-tab").forEach((tab) => {
     tab.addEventListener("click", () => {
         document.querySelectorAll(".filter-tab").forEach((item) => item.classList.remove("active"));
@@ -34,7 +48,24 @@ document.querySelectorAll(".filter-tab").forEach((tab) => {
         document.querySelectorAll(".service-card").forEach((item) => {
             item.style.display = filter === "all" || item.dataset.category === filter ? "grid" : "none";
         });
+        document.querySelectorAll(".gallery-result-card").forEach((item) => {
+            item.style.display = filter === "all" || item.dataset.category === filter ? "grid" : "none";
+        });
     });
+});
+
+document.querySelectorAll("[data-before-after-slider]").forEach((slider) => {
+    const stage = slider.querySelector(".before-after-stage");
+    const range = slider.querySelector(".before-after-range");
+
+    if (!stage || !range) return;
+
+    const updateSplit = () => {
+        stage.style.setProperty("--split", `${range.value}%`);
+    };
+
+    updateSplit();
+    range.addEventListener("input", updateSplit);
 });
 
 document.querySelectorAll(".faq-item").forEach((item) => {
@@ -109,7 +140,7 @@ const observer = new IntersectionObserver((entries) => {
     rootMargin: "0px 0px -50px 0px",
 });
 
-document.querySelectorAll(".feature-card, .gallery-item, .price-card, .how-step").forEach((el) => {
+document.querySelectorAll(".feature-card, .gallery-item, .gallery-result-card, .price-card, .how-step").forEach((el) => {
     el.style.opacity = "0";
     el.style.transform = "translateY(30px)";
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
