@@ -22,16 +22,15 @@ function renderGoogleReviews(data) {
     const reviews = Array.isArray(data.reviews) ? data.reviews.slice(0, 6) : [];
     const ratingCopy = data.rating && data.reviewCount
         ? `${data.rating} / 5 average from ${data.reviewCount} Google reviews`
-        : "Latest Google review snapshot";
-    const updated = data.updatedAt ? `Updated ${escapeHtml(data.updatedAt)}` : "Updated from Google";
+        : "Real customer feedback from Google.";
     const profileUrl = data.profileUrl || fallbackProfileUrl;
 
     const cards = reviews.map((review) => {
         const category = review.category || "Google Review";
-        const rating = review.rating ? `${escapeHtml(review.rating)} / 5` : "Google";
+        const rating = review.rating ? `${escapeHtml(review.rating)} / 5 on Google` : "Google";
         const time = review.relativeTimeDescription
             ? `\n                        <span class="review-sync-note">${escapeHtml(review.relativeTimeDescription)}</span>`
-            : "";
+            : `\n                        <span class="review-sync-note">Posted from the ${escapeHtml(data.businessName || "Detail Dogs")} Google Business Profile.</span>`;
 
         return `                    <article class="review-card google-review-card">
                         <div class="google-card-top">
@@ -47,12 +46,11 @@ function renderGoogleReviews(data) {
             <section class="review-section-block google-review-section" aria-label="Google reviews">
                 <div class="review-section-heading google-review-heading">
                     <div>
-                        <span class="service-pill">Google Reviews</span>
+                        <span class="service-pill">Posted Google Review</span>
                         <h2>${escapeHtml(ratingCopy)}</h2>
                     </div>
                     <a class="cta-btn-secondary review-source-link" href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener">View on Google</a>
                 </div>
-                <p class="review-sync-note">${updated}. Weekly updates use the official Google Places API when credentials are configured.</p>
                 <div class="review-card-grid">
 ${cards}
                 </div>
