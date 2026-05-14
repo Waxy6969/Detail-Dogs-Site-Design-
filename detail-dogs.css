@@ -144,6 +144,23 @@
     color: var(--text-muted);
 }
 
+.about-lead-grid,
+.about-step-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.about-process-panel {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.about-step-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .contact-box {
     align-items: start;
 }
@@ -516,6 +533,8 @@
     .service-card-grid,
     .gallery-result-grid,
     .review-card-grid,
+    .about-lead-grid,
+    .about-step-grid,
     .service-detail-layout {
         grid-template-columns: 1fr;
     }
