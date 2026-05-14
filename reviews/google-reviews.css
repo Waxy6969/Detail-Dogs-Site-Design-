@@ -1,0 +1,52 @@
+.google-review-section {
+    margin-top: 3rem;
+}
+
+.google-review-section .review-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.google-review-card {
+    min-height: auto;
+}
+
+.google-review-heading {
+    align-items: end;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.google-card-top {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.google-rating-text {
+    color: var(--text-main);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.review-source-link {
+    flex: 0 0 auto;
+}
+
+.review-sync-note {
+    color: var(--text-muted);
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .google-review-heading {
+        align-items: start;
+        flex-direction: column;
+    }
+}
