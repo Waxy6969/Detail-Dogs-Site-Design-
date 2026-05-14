@@ -31,6 +31,9 @@ document.querySelectorAll(".filter-tab").forEach((tab) => {
         document.querySelectorAll(".gallery-item").forEach((item) => {
             item.style.display = filter === "all" || item.dataset.category === filter ? "block" : "none";
         });
+        document.querySelectorAll(".service-card").forEach((item) => {
+            item.style.display = filter === "all" || item.dataset.category === filter ? "grid" : "none";
+        });
     });
 });
 
