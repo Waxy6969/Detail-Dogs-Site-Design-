@@ -30,6 +30,39 @@ document.querySelectorAll("a[href='#reviews'], a[href='/#reviews']").forEach((li
     link.setAttribute("href", "/reviews/");
 });
 
+document.querySelectorAll("a[href='#about'], a[href='/#about']").forEach((link) => {
+    link.setAttribute("href", "/about/");
+});
+
+document.querySelectorAll(".nav-links").forEach((navList) => {
+    if (navList.querySelector("a[href='/about/']")) return;
+
+    const servicesItem = navList.querySelector("a[href='/services/']")?.parentElement;
+    const aboutItem = document.createElement("li");
+    aboutItem.innerHTML = '<a href="/about/">About</a>';
+
+    if (servicesItem && servicesItem.parentElement === navList) {
+        servicesItem.insertAdjacentElement("afterend", aboutItem);
+    } else {
+        navList.appendChild(aboutItem);
+    }
+});
+
+document.querySelectorAll(".mobile-menu").forEach((menu) => {
+    if (menu.querySelector("a[href='/about/']")) return;
+
+    const servicesLink = menu.querySelector("a[href='/services/']");
+    const aboutLink = document.createElement("a");
+    aboutLink.href = "/about/";
+    aboutLink.textContent = "About";
+
+    if (servicesLink) {
+        servicesLink.insertAdjacentElement("afterend", aboutLink);
+    } else {
+        menu.appendChild(aboutLink);
+    }
+});
+
 const resultShowcaseHeader = document.querySelector("#gallery .section-header > div:first-child");
 
 if (resultShowcaseHeader && !resultShowcaseHeader.querySelector("a[href='/gallery/']")) {
