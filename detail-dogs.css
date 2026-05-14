@@ -52,8 +52,8 @@
 
 .review-quote {
     max-width: 860px;
-    margin: 0 auto 3rem;
-    padding: 2rem;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
     border: 1px solid rgba(251, 191, 36, 0.35);
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(168, 85, 247, 0.08));
 }
@@ -64,7 +64,7 @@
     line-height: 0.95;
     letter-spacing: 1px;
     color: var(--text-main);
-    margin-bottom: 1rem;
+    margin-bottom: 0.65rem;
 }
 
 .review-quote strong {
@@ -74,8 +74,8 @@
 
 .featured-review-panel {
     max-width: 980px;
-    margin-bottom: 2.5rem;
-    padding: 2rem;
+    margin-bottom: 1.75rem;
+    padding: 1.5rem;
     border: 1px solid rgba(251, 191, 36, 0.35);
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(255, 45, 106, 0.06));
 }
@@ -86,7 +86,7 @@
     line-height: 0.92;
     letter-spacing: 1px;
     color: var(--text-main);
-    margin-bottom: 1rem;
+    margin-bottom: 0.65rem;
 }
 
 .featured-review-panel strong {
@@ -96,8 +96,8 @@
 
 .review-section-block {
     display: grid;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .review-section-heading h2 {
@@ -106,24 +106,24 @@
     line-height: 0.95;
     letter-spacing: 1px;
     color: var(--text-main);
-    margin-top: 0.75rem;
+    margin-top: 0.45rem;
 }
 
 .review-card-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
 .review-category-grid {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .review-card {
     display: grid;
-    gap: 1rem;
+    gap: 0.75rem;
     min-height: 220px;
-    padding: 1.25rem;
+    padding: 1rem;
     border: 1px solid var(--card-border);
     background: var(--card-bg);
     color: var(--text-main);
@@ -148,13 +148,13 @@
 .about-step-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
 .about-process-panel {
     display: grid;
-    gap: 1rem;
-    margin: 1rem 0;
+    gap: 0.85rem;
+    margin: 0.75rem 0;
 }
 
 .about-step-grid {
@@ -224,8 +224,8 @@
 
 .subpage-hero {
     display: grid;
-    gap: 1.25rem;
-    margin-bottom: 3rem;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 .subpage-hero h1,
@@ -241,26 +241,27 @@
     max-width: 760px;
     color: var(--text-muted);
     font-size: 1.08rem;
+    line-height: 1.45;
 }
 
 .service-filter-bar {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin: 2rem 0 2.5rem;
+    margin: 1.25rem 0 1.5rem;
 }
 
 .service-card-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
 .service-card {
     display: grid;
-    gap: 1rem;
+    gap: 0.75rem;
     min-height: 300px;
-    padding: 1.25rem;
+    padding: 1rem;
     border: 1px solid var(--card-border);
     background: var(--card-bg);
     color: var(--text-main);
@@ -296,14 +297,15 @@
 
 .service-card p {
     color: var(--text-muted);
+    line-height: 1.45;
 }
 
 .gallery-feature-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
-    gap: 1rem;
+    gap: 0.85rem;
     align-items: stretch;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
 }
 
 .before-after-slider {
@@ -399,15 +401,15 @@
 .gallery-result-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
 .gallery-result-card {
     display: grid;
     grid-template-rows: 220px 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
     min-height: 440px;
-    padding: 1rem;
+    padding: 0.9rem;
     border: 1px solid var(--card-border);
     background: var(--card-bg);
     color: var(--text-main);
@@ -425,20 +427,21 @@
     font-size: 2.2rem;
     line-height: 0.95;
     letter-spacing: 1px;
-    margin: 0.75rem 0;
+    margin: 0.45rem 0;
 }
 
 .gallery-result-card p {
     color: var(--text-muted);
+    line-height: 1.45;
 }
 
 .gallery-cta-panel {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.85rem;
     align-items: center;
-    margin-top: 2.5rem;
-    padding: 1.5rem;
+    margin-top: 1.75rem;
+    padding: 1.25rem;
     border: 1px solid rgba(251, 191, 36, 0.35);
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(0, 240, 255, 0.06));
 }
@@ -450,7 +453,7 @@
 }
 
 .membership-policy-list li {
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.4rem;
 }
 
 .service-meta {
@@ -472,7 +475,7 @@
 .service-detail-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 340px;
-    gap: 2rem;
+    gap: 1.25rem;
     align-items: start;
 }
 
@@ -480,27 +483,28 @@
 .service-side-panel {
     border: 1px solid var(--card-border);
     background: var(--card-bg);
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .service-detail-panel {
     display: grid;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 
 .service-detail-panel p,
 .service-side-panel p,
 .service-side-panel li {
     color: var(--text-muted);
+    line-height: 1.45;
 }
 
 .service-side-panel ul {
-    margin: 1rem 0 0;
+    margin: 0.7rem 0 0;
     padding-left: 1.2rem;
 }
 
 .service-side-panel li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
 }
 
 .service-detail-actions {
