@@ -46,6 +46,8 @@
 
 .service-grid .feature-card {
     min-height: 310px;
+    color: var(--text-main);
+    text-decoration: none;
 }
 
 .review-quote {
