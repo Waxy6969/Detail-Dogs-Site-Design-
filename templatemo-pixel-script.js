@@ -26,6 +26,10 @@ document.querySelectorAll("a[href='#gallery'], a[href='/#gallery']").forEach((li
     link.setAttribute("href", "/gallery/");
 });
 
+document.querySelectorAll("a[href='#reviews'], a[href='/#reviews']").forEach((link) => {
+    link.setAttribute("href", "/reviews/");
+});
+
 const resultShowcaseHeader = document.querySelector("#gallery .section-header > div:first-child");
 
 if (resultShowcaseHeader && !resultShowcaseHeader.querySelector("a[href='/gallery/']")) {
@@ -34,6 +38,16 @@ if (resultShowcaseHeader && !resultShowcaseHeader.querySelector("a[href='/galler
     galleryLink.href = "/gallery/";
     galleryLink.textContent = "View Full Gallery";
     resultShowcaseHeader.appendChild(galleryLink);
+}
+
+const reviewsHeader = document.querySelector("#reviews .features-header");
+
+if (reviewsHeader && !reviewsHeader.querySelector("a[href='/reviews/']")) {
+    const reviewsLink = document.createElement("a");
+    reviewsLink.className = "cta-btn-secondary";
+    reviewsLink.href = "/reviews/";
+    reviewsLink.textContent = "View All Reviews";
+    reviewsHeader.appendChild(reviewsLink);
 }
 
 document.querySelectorAll(".filter-tab").forEach((tab) => {
