@@ -1,6 +1,10 @@
 const mobileToggle = document.getElementById("mobileToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
+const navSpacingStyle = document.createElement("style");
+navSpacingStyle.textContent = ".nav-links{gap:1rem}.nav-links a{padding-left:.45rem;padding-right:.45rem}";
+document.head.appendChild(navSpacingStyle);
+
 if (mobileToggle && mobileMenu) {
     mobileToggle.addEventListener("click", () => {
         mobileToggle.classList.toggle("active");
