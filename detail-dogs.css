@@ -122,6 +122,159 @@
     margin-bottom: 1rem;
 }
 
+.subpage-main {
+    padding: 9rem 4% 4rem;
+}
+
+.subpage-inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.subpage-hero {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.subpage-hero h1,
+.service-detail-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: var(--text-main);
+}
+
+.subpage-copy {
+    max-width: 760px;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+}
+
+.service-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem 0 2.5rem;
+}
+
+.service-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.service-card {
+    display: grid;
+    gap: 1rem;
+    min-height: 300px;
+    padding: 1.25rem;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    color: var(--text-main);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.08), transparent 42%, rgba(255, 45, 106, 0.08));
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.4rem;
+    line-height: 0.95;
+    letter-spacing: 1px;
+}
+
+.service-card p {
+    color: var(--text-muted);
+}
+
+.service-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-self: end;
+}
+
+.service-pill {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    padding: 0.4rem 0.55rem;
+}
+
+.service-detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.service-detail-panel,
+.service-side-panel {
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    padding: 1.5rem;
+}
+
+.service-detail-panel {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.service-detail-panel p,
+.service-side-panel p,
+.service-side-panel li {
+    color: var(--text-muted);
+}
+
+.service-side-panel ul {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.service-side-panel li {
+    margin-bottom: 0.6rem;
+}
+
+.service-detail-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.back-link {
+    color: var(--text-muted);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.82rem;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--text-main);
+}
+
 @media (max-width: 768px) {
     .booking-form {
         grid-template-columns: 1fr;
@@ -129,5 +282,14 @@
 
     .hero-stats {
         grid-template-columns: 1fr;
+    }
+
+    .service-card-grid,
+    .service-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .subpage-main {
+        padding-top: 8rem;
     }
 }
