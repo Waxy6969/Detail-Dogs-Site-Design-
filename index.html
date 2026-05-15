@@ -3,435 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Dogs LLC | Auto Detailing & Restoration</title>
-    <meta name="description" content="Detail Dogs LLC provides premium auto detailing, ceramic protection, tinting, paint correction, and restoration services in Reading, PA.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://templatemo.com/templates/templatemo_617_pixel_forge/templatemo-pixel-forge-style.css">
-    <link rel="stylesheet" href="detail-dogs.css">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Detail Dogs LLC | Site Under Construction</title>
+    <meta name="description" content="Detail Dogs LLC is currently updating the website. Call or email to book service.">
+    <style>
+        :root {
+            --bg: #050b16;
+            --navy: #071426;
+            --red: #ff1f4f;
+            --blue: #006fe8;
+            --teal: #18f0e4;
+            --orange: #ff7a00;
+            --text: #fbfdff;
+            --muted: #c1d0dc;
+            --glass: rgba(226, 233, 238, 0.1);
+            --line: rgba(24, 240, 228, 0.34);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            background:
+                linear-gradient(180deg, rgba(185, 195, 205, 0.16), rgba(74, 88, 102, 0.1) 44%, rgba(157, 169, 179, 0.08)),
+                radial-gradient(circle at 76% 8%, rgba(24, 240, 228, 0.36), transparent 32rem),
+                radial-gradient(circle at 8% 42%, rgba(255, 31, 79, 0.32), transparent 30rem),
+                radial-gradient(circle at 24% 82%, rgba(255, 122, 0, 0.22), transparent 26rem),
+                radial-gradient(circle at 78% 78%, rgba(0, 111, 232, 0.58), transparent 36rem),
+                linear-gradient(180deg, var(--navy) 0%, var(--bg) 52%, var(--navy) 100%);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .construction-card {
+            width: min(680px, 100%);
+            padding: clamp(2rem, 6vw, 4rem);
+            border: 1px solid var(--line);
+            background: linear-gradient(135deg, rgba(226, 233, 238, 0.11), rgba(255, 31, 79, 0.13), rgba(255, 122, 0, 0.1), rgba(0, 111, 232, 0.18));
+            box-shadow: 0 26px 80px rgba(0, 0, 0, 0.36), 0 0 42px rgba(24, 240, 228, 0.12);
+            backdrop-filter: blur(18px);
+        }
+
+        .logo-mark {
+            display: block;
+            width: min(300px, 74vw);
+            margin: 0 auto 1.35rem;
+            filter: drop-shadow(0 18px 48px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 34px rgba(0, 111, 232, 0.32));
+        }
+
+        .status {
+            margin: 0;
+            color: var(--text);
+            font-size: clamp(1.5rem, 5vw, 2.6rem);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .note {
+            max-width: 34rem;
+            margin: 1rem auto 0;
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+            margin-top: 1.8rem;
+        }
+
+        .action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0.8rem 1.1rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: var(--text);
+            font-weight: 800;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+
+        .action-primary {
+            background: linear-gradient(135deg, var(--red), var(--orange) 48%, var(--blue));
+        }
+
+        .action-secondary {
+            background: rgba(7, 20, 38, 0.56);
+            border-color: var(--line);
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 1rem;
+            }
+
+            .construction-card {
+                padding: 2rem 1.1rem;
+            }
+
+            .actions {
+                display: grid;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-    <div class="ambient-glow glow-3"></div>
-
-    <nav>
-        <div class="nav-inner">
-            <a class="logo" href="#home">
-                DETAIL DOGS
-                <span>Auto Detailing + Surface Care</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/services/">Services</a></li><li><a href="/about/">About</a></li>
-                <li><a href="/memberships/">Memberships</a></li>
-                <li><a href="/gallery/">Results</a></li>
-                <li><a href="/reviews/">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a class="nav-cta" href="tel:+14849260606">Call Now</a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <main class="construction-card" aria-labelledby="construction-title">
+        <img class="logo-mark" src="data:image/jpeg;base64,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" alt="Detail Dogs professional services logo">
+        <h1 class="status" id="construction-title">Site Under Construction</h1>
+        <p class="note">We are finishing up the new site. You can still call or email Detail Dogs LLC to book service or ask a question.</p>
+        <div class="actions">
+            <a class="action action-primary" href="tel:+14849260606">Call Now</a>
+            <a class="action action-secondary" href="mailto:detaildogsllc@gmail.com?subject=Detail%20Dogs%20Service%20Request">Email Us</a>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="/services/">Services</a><a href="/about/">About</a>
-            <a href="/memberships/">Memberships</a>
-            <a href="/gallery/">Results</a>
-            <a href="/reviews/">Reviews</a>
-            <a href="#contact">Contact</a>
-            <a class="nav-cta" href="mailto:detaildogsllc@gmail.com?subject=Detail%20Dogs%20Booking%20Request">Book Service</a>
-        </div>
-    </nav>
-
-    <main id="home">
-        <section class="hero">
-            <div class="hero-inner">
-                <div class="hero-content">
-                    <div class="hero-badge">Reading, PA and surrounding areas</div>
-                    <h1>
-                        <span class="line-1">YOU ARE</span>
-                        <span class="line-2">BARKING UP</span>
-                        <span class="line-3">the right tree</span>
-                    </h1>
-                    <p class="hero-desc">Professional Services. Top Quality. Passion Driven. Detail Dogs LLC delivers premium automotive detailing, surface restoration, tinting, paint correction, and protection services.</p>
-
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <div class="stat-value">3 HR+</div>
-                            <div class="stat-label">Interior Resets</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">$120+</div>
-                            <div class="stat-label">Interior Detail</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">10/10</div>
-                            <div class="stat-label">Featured Review</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-demo service-panel">
-                    <div class="floating-badge badge-1">Mobile + In-Shop</div>
-                    <div class="floating-badge badge-2">Quality over shortcuts</div>
-                    <div class="demo-container">
-                        <div class="demo-header">
-                            <div class="demo-dot"></div>
-                            <div class="demo-dot"></div>
-                            <div class="demo-dot"></div>
-                        </div>
-                        <div class="prompt-area">
-                            <div class="prompt-label">Quick Booking Info</div>
-                            <div class="booking-summary">
-                                <strong>Detail Dogs LLC</strong>
-                                <span>detaildogsllc@gmail.com</span>
-                                <span>(484) 926-0606</span>
-                                <span>Reading, Pennsylvania area</span>
-                            </div>
-                        </div>
-                        <div class="demo-controls">
-                            <div class="control-group">
-                                <label class="control-label">Popular Detail</label>
-                                <select class="control-select" aria-label="Popular service">
-                                    <option>Full Service Detail - starting at $250</option>
-                                    <option>Deep Interior Detail - starting at $120</option>
-                                    <option>Deep Exterior Wash - starting at $100</option>
-                                    <option>Executive Status Detail - custom quote</option>
-                                </select>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Service Focus</label>
-                                <div class="aspect-ratios">
-                                    <button class="aspect-btn active" type="button">Auto</button>
-                                    <button class="aspect-btn" type="button">Exterior</button>
-                                    <button class="aspect-btn" type="button">Fleet</button>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="generate-btn service-cta" href="#contact">
-                            <span class="btn-text">Request Service</span>
-                        </a>
-                        <div class="output-area result-preview">
-                            <img class="generated-image visible" src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-01.jpg" alt="Premium vehicle care visual">
-                            <div class="image-actions visible">
-                                <a class="action-btn" href="/services/">View Services</a>
-                                <a class="action-btn" href="tel:+14849260606">Call</a>
-                                <a class="action-btn" href="mailto:detaildogsllc@gmail.com">Email</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features-section" id="services">
-            <div class="features-inner">
-                <div class="features-header">
-                    <h2 class="section-title">SERVICE <span>MENU</span></h2>
-                    <p class="section-subtitle">Detailing, protection, tinting, and restoration built around clean results and clear communication.</p>
-                </div>
-
-                <div class="features-grid service-grid">
-                    <a class="feature-card highlight" href="/service/deep-interior-detail">
-                        <span class="feature-number">01</span>
-                        <h3 class="feature-title">DEEP INTERIOR DETAIL</h3>
-                        <p class="feature-desc">Steam cleaning, shampooing, leather conditioning, streak-free windows, odor reduction, and protective finishing.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">$120+</span>
-                            <span class="feature-stat-label">3 HR</span>
-                        </div>
-                    </a>
-                    <a class="feature-card" href="/service/full-service-detail">
-                        <span class="feature-number">02</span>
-                        <h3 class="feature-title">FULL SERVICE DETAIL</h3>
-                        <p class="feature-desc">Complete interior and exterior detail with deep cleaning, hand wash, tire and rim detailing, glass, and spray wax.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">$250+</span>
-                            <span class="feature-stat-label">4 HR</span>
-                        </div>
-                    </a>
-                    <a class="feature-card" href="/service/deep-exterior-wash">
-                        <span class="feature-number">03</span>
-                        <h3 class="feature-title">DEEP EXTERIOR WASH</h3>
-                        <p class="feature-desc">Exterior reset for dirt, grime, wheels, tires, glass, and gloss-focused finishing.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">$100+</span>
-                            <span class="feature-stat-label">1 HR</span>
-                        </div>
-                    </a>
-                    <a class="feature-card" href="/service/executive-status-detail">
-                        <span class="feature-number">04</span>
-                        <h3 class="feature-title">EXECUTIVE STATUS DETAIL</h3>
-                        <p class="feature-desc">Premium restoration with full detail, paint decontamination, clay bar treatment, paint correction, and ceramic coating protection.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">4-12 HR</span>
-                            <span class="feature-stat-label">Custom quote</span>
-                        </div>
-                    </a>
-                    <a class="feature-card" href="/service/headlight-restoration">
-                        <span class="feature-number">05</span>
-                        <h3 class="feature-title">HEADLIGHT RESTORATION</h3>
-                        <p class="feature-desc">Improve clarity, curb appeal, and night visibility with focused headlight correction.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">$80+</span>
-                            <span class="feature-stat-label">1 HR</span>
-                        </div>
-                    </a>
-                    <a class="feature-card" href="/service/car-tinting">
-                        <span class="feature-number">06</span>
-                        <h3 class="feature-title">CAR TINTING</h3>
-                        <p class="feature-desc">Automotive tinting services designed to improve privacy, comfort, appearance, and sun protection.</p>
-                        <div class="feature-stat">
-                            <span class="feature-stat-value">Custom</span>
-                            <span class="feature-stat-label">Prices vary</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="how-section" id="about">
-            <div class="how-inner">
-                <div class="features-header">
-                    <h2 class="section-title">WHY DETAIL <span>DOGS</span></h2>
-                </div>
-                <div class="how-grid">
-                    <div class="how-step">
-                        <div class="step-number">01</div>
-                        <h3 class="step-title">INSPECT</h3>
-                        <p class="step-desc">Every vehicle starts with a condition check, service goals, and a realistic plan before work begins.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="step-number">02</div>
-                        <h3 class="step-title">RESTORE</h3>
-                        <p class="step-desc">Professional-grade processes target embedded grime, oxidation, stains, odors, interior wear, and paint imperfections.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="step-number">03</div>
-                        <h3 class="step-title">PROTECT</h3>
-                        <p class="step-desc">Finishing options like spray wax, ceramic coating, leather conditioning, and maintenance plans help results last.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="gallery-section" id="gallery">
-            <div class="gallery-inner">
-                <div class="section-header">
-                    <div>
-                        <h2 class="section-title">RESULT <span>SHOWCASE</span></h2>
-                        <p class="section-subtitle">A visual layout for before-and-after transformations, service categories, and behind-the-scenes content.</p>
-                        <a class="cta-btn-secondary" href="/gallery/">View Full Gallery</a>
-                    </div>
-                    <div class="filter-tabs">
-                        <button class="filter-tab active" data-filter="all" type="button">All</button>
-                        <button class="filter-tab" data-filter="interior" type="button">Interior</button>
-                        <button class="filter-tab" data-filter="exterior" type="button">Exterior</button>
-                        <button class="filter-tab" data-filter="shop" type="button">Shop</button>
-                    </div>
-                </div>
-
-                <div class="bento-gallery">
-                    <div class="gallery-item" data-category="exterior">
-                        <img src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-01.jpg" alt="Exterior detail result">
-                        <div class="item-info">
-                            <p class="item-prompt">Deep exterior wash, tire and rim detailing, glass cleaning, and gloss-focused finishing.</p>
-                            <span class="item-style">Exterior Detail</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="interior">
-                        <img src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-02.jpg" alt="Interior detail result">
-                        <div class="item-info">
-                            <p class="item-prompt">Steam cleaning, shampooing, odor reduction, touch-point sanitation, and leather conditioning.</p>
-                            <span class="item-style">Interior Reset</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="exterior">
-                        <img src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-03.jpg" alt="Paint correction result">
-                        <div class="item-info">
-                            <p class="item-prompt">Paint decontamination, clay bar treatment, correction, and ceramic protection.</p>
-                            <span class="item-style">Paint + Ceramic</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="shop">
-                        <img src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-05.jpg" alt="Behind the scenes">
-                        <div class="item-info">
-                            <p class="item-prompt">Behind the scenes detailing process, professional tools, compounds, and finishing work.</p>
-                            <span class="item-style">Process</span>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="exterior">
-                        <img src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-07.jpg" alt="Headlight restoration result">
-                        <div class="item-info">
-                            <p class="item-prompt">Headlight restoration for improved clarity, appearance, and night visibility.</p>
-                            <span class="item-style">Headlights</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pricing-section" id="memberships">
-            <div class="pricing-inner">
-                <div class="features-header">
-                    <h2 class="section-title">MAINTENANCE <span>MEMBERSHIPS</span></h2>
-                    <p class="section-subtitle">Keep your vehicle clean without starting over every time.</p>
-                </div>
-
-                <div class="pricing-grid">
-                    <div class="price-card">
-                        <h3 class="plan-name">MAINTENANCE WASH</h3>
-                        <p class="plan-desc">Routine exterior maintenance to preserve gloss, reduce buildup, and protect finishes.</p>
-                        <ul class="plan-features">
-                            <li>Priority scheduling windows</li>
-                            <li>Consistent maintenance care</li>
-                            <li>Cleaner vehicle between major details</li>
-                        </ul>
-                        <a class="plan-btn" href="#contact">Ask About Wash Plans</a>
-                    </div>
-                    <div class="price-card popular">
-                        <div class="popular-badge">Best for Regulars</div>
-                        <h3 class="plan-name">FULL DETAIL MAINTENANCE</h3>
-                        <p class="plan-desc">Interior and exterior maintenance for clients who want full-vehicle consistency year-round.</p>
-                        <ul class="plan-features">
-                            <li>Interior refreshes</li>
-                            <li>Exterior upkeep</li>
-                            <li>Priority booking</li>
-                            <li>Cleaner vehicle month after month</li>
-                        </ul>
-                        <a class="plan-btn" href="#contact">Start Membership</a>
-                    </div>
-                    <div class="price-card">
-                        <h3 class="plan-name">MEMBERSHIP TERMS</h3>
-                        <p class="plan-desc">Memberships are built for maintained vehicles and clear expectations.</p>
-                        <ul class="plan-features">
-                            <li>Applies to one registered vehicle</li>
-                            <li>Excessively dirty vehicles may need an upgrade</li>
-                            <li>Missed appointments do not roll over</li>
-                            <li>24-hour cancellation notice required</li>
-                        </ul>
-                        <a class="plan-btn" href="mailto:detaildogsllc@gmail.com?subject=Membership%20Inquiry">Email Membership Inquiry</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section" id="reviews">
-            <div class="features-header">
-                <h2 class="section-title">REVIEWS & <span>QUESTIONS</span></h2>
-            </div>
-
-            <div class="review-quote">
-                <p>"This truck looks like it's a 2021 after Detail Dogs got done with it. Insane work! 10/10."</p>
-                <strong>- Jude Outerbridge</strong>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-item open">
-                    <button class="faq-question" type="button">What does Detail Dogs specialize in?</button>
-                    <div class="faq-answer">
-                        <p>Premium auto detailing, interior reconditioning, exterior washes, paint decontamination, paint correction, ceramic coating protection, tinting, and restoration services.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" type="button">How do I choose the right detail package?</button>
-                    <div class="faq-answer">
-                        <p>Reach out with your vehicle condition, goals, and photos when possible. Detail Dogs can recommend a basic, full-service, or Executive Status package based on the result you want.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" type="button">Are prices fixed?</button>
-                    <div class="faq-answer">
-                        <p>Some services have starting prices, while larger restoration, tinting, and Executive Status jobs vary by vehicle size, condition, and scope.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" type="button">Where does Detail Dogs operate?</button>
-                    <div class="faq-answer">
-                        <p>The company is based around Reading, Pennsylvania and serves the surrounding area.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section" id="contact">
-            <div class="cta-box contact-box">
-                <div class="cta-content">
-                    <div class="cta-eyebrow">Contact / Booking</div>
-                    <h2 class="cta-title">
-                        READY FOR A CLEANER RESULT?
-                        <span>Send a request today.</span>
-                    </h2>
-                    <p class="cta-desc">Questions, comments, or service requests? Reach out directly with the service type, vehicle condition, preferred timing, and any photos you want reviewed.</p>
-                    <div class="cta-buttons">
-                        <a class="cta-btn-primary" href="mailto:detaildogsllc@gmail.com?subject=Detail%20Dogs%20Booking%20Request">Email Detail Dogs</a>
-                        <a class="cta-btn-secondary" href="tel:+14849260606">Call (484) 926-0606</a>
-                    </div>
-                </div>
-                <form class="booking-form" action="mailto:detaildogsllc@gmail.com" method="post" enctype="text/plain">
-                    <label>Full Name<input type="text" name="full_name" required></label>
-                    <label>Email<input type="email" name="email" required></label>
-                    <label>Phone<input type="tel" name="phone" required></label>
-                    <label>Service Type<input type="text" name="service_type" required></label>
-                    <label>Vehicle Year/Make/Model<input type="text" name="vehicle"></label>
-                    <label>Vehicle Color<input type="text" name="vehicle_color"></label>
-                    <label class="full-row">Vehicle Condition<textarea name="condition" rows="4"></textarea></label>
-                    <label>Preferred Date<input type="date" name="preferred_date"></label>
-                    <label>Preferred Time<input type="time" name="preferred_time"></label>
-                    <label class="full-row">Message<textarea name="message" rows="5"></textarea></label>
-                    <button class="cta-btn-primary full-row" type="submit">Submit Booking Request</button>
-                </form>
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        DETAIL DOGS
-                        <span>Professional Services. Top Quality. Passion Driven.</span>
-                    </div>
-                    <p class="footer-desc">Professional auto detailing, tinting, paint correction, ceramic protection, and restoration services serving Reading, PA and surrounding areas.</p>
-                </div>
-                <div class="footer-subscribe">
-                    <h4>Contact</h4>
-                    <p class="subscribe-desc">detaildogsllc@gmail.com</p>
-                    <p class="subscribe-desc">(484) 926-0606</p>
-                    <p class="subscribe-desc">Reading, Pennsylvania area</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Detail Dogs LLC. Layout adapted from <a href="https://templatemo.com/tm-617-pixel-forge" target="_blank" rel="nofollow">TemplateMo Pixel Forge</a>.</p>
-                <div class="footer-legal">
-                    <a href="/services/">Services</a><a href="/about/">About</a>
-                    <a href="/memberships/">Memberships</a>
-                    <a href="#contact">Book Now</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="gallery-popup" id="galleryPopup">
-        <div class="popup-overlay"></div>
-        <div class="popup-content">
-            <button class="popup-close" id="popupClose" type="button" aria-label="Close gallery preview">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            </button>
-            <div class="popup-image-container">
-                <img class="popup-image" id="popupImage" src="" alt="Gallery image">
-            </div>
-            <div class="popup-info">
-                <p class="popup-prompt" id="popupPrompt"></p>
-                <span class="popup-style" id="popupStyle"></span>
-            </div>
-        </div>
-    </div>
-
-    <script src="templatemo-pixel-script.js"></script>
 </body>
 </html>
