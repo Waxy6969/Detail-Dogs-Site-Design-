@@ -1,5 +1,5 @@
 .google-review-section {
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 .google-review-section .review-card-grid {
@@ -8,6 +8,7 @@
 
 .google-review-card {
     min-height: auto;
+    padding: 1.5rem;
     border-color: rgba(251, 191, 36, 0.35);
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(0, 240, 255, 0.05));
 }
@@ -54,12 +55,19 @@
     display: block;
     font-family: 'Space Mono', monospace;
     font-size: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
     .google-review-heading {
         align-items: start;
         flex-direction: column;
+        gap: 1rem;
+    }
+
+    .google-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
     }
 }
