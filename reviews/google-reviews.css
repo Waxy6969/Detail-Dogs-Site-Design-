@@ -9,8 +9,8 @@
 .google-review-card {
     min-height: auto;
     padding: 1.5rem;
-    border-color: rgba(251, 191, 36, 0.35);
-    background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(0, 240, 255, 0.05));
+    border-color: rgba(205, 219, 226, 0.24);
+    background: linear-gradient(135deg, rgba(226, 233, 238, 0.1), rgba(255, 31, 79, 0.16), rgba(255, 122, 0, 0.1), rgba(0, 111, 232, 0.2));
 }
 
 .google-review-card p {
@@ -20,7 +20,7 @@
 }
 
 .google-review-card strong {
-    color: #fbbf24;
+    color: var(--palette-orange);
     font-family: 'Space Mono', monospace;
 }
 
