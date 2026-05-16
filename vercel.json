@@ -4,7 +4,14 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "dd_admin",
+          "value": "erv_zbSXx48qypXLMjxQk_umzVdhmEYXJGgjsU50IUs"
+        }
+      ],
+      "destination": "/construction.html"
     }
   ]
 }
